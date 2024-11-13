@@ -1,0 +1,339 @@
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+header{
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 300px;
+    background: url(../common/img/head_photo.jpg) no-repeat center top;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.contents01_01{
+    color: #f7f7f7;
+    line-height: normal;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h1 span{
+    color: #F47D18;
+}
+
+.contents01_01 p{
+    font-family: "Montserrat:ital", sans-serif;
+    text-align: center;
+}
+
+/* sec02
+--------------------------------- */
+
+#sec02{
+    flex-direction: column;
+}
+
+.contents02_02, .contents02_04{
+    margin-bottom: 24vh;
+}
+
+.contents02_03, .contents02_05{
+    margin-bottom: 12vh;
+}
+
+.contents02_03, .contents02_04, .contents02_05, .contents02_06{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inview_re{
+    width: 41.2%;
+}
+
+.inview_re img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.text{
+    width: 56.8%;
+}
+
+#sec02 h2{
+    text-align: start;
+    margin: 0vh;
+}
+
+.facebook img{
+    width: 50px;
+    height: 50px;
+}
+
+.facebook, .link{
+    text-align: end;
+}
+
+.contents02_03 h2::before{
+    width: 76%;
+    height: 500px;
+    content: "";
+    background-color: #F47D18;
+    opacity: 0.7;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    left: 24%;
+    margin-top: -20px;
+    z-index: -10;
+}
+
+.contents02_04 h2::before{
+    width: 61%;
+    height: 450px;
+    content: "";
+    background-color: #F2EDCA;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    left: 39%;
+    margin-top: -40px;
+    z-index: -10;
+}
+
+.contents02_05 h2::before{
+    width: 67%;
+    height: 370px;
+    content: "";
+    background-color: #c4ccd4;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    left: 33%;
+    margin-top: -20px;
+    z-index: -10;
+}
+
+.contents02_06 h2::before{
+    width: 80%;
+    height: 440px;
+    content: "";
+    background-color: #fff;
+    border-radius: 50px 0 0 50px;
+    position: absolute;
+    margin-top: -20px;
+    left: 20%;
+    z-index: -10;
+}
+
+.fadeIn{
+    opacity: 0;
+    transition: 2s;
+}
+.fadeIn.is-show{
+    opacity: 1;
+}
+
+/* sec03
+--------------------------------- */
+
+#sec03{
+    flex-direction: column;
+}
+
+.contents03_02, .contents03_03, .contents03_04, .contents03_05, .contents03_06, .contents03_07{
+    margin-bottom: 12vh;
+}
+
+h4{
+    text-align: start;
+    margin: 0;
+}
+
+h4 span{
+    color: #F47D18;
+}
+
+.fadeIn_up{
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: 2s;
+}
+
+.fadeIn_up.is-show{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    content: url(img/business_honeycomb.png);
+    top: 2850px;
+    right: 2vw;
+    position: absolute;
+    z-index: -10;
+}
+
+
+
+/* レスポンシブ01
+--------------------------------- */
+@media screen and (max-width: 834px){
+
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 150px;
+}
+
+/* sec02
+--------------------------------- */
+
+.contents02_02, .contents02_04{
+    margin-bottom: 12vh;
+}
+
+.contents02_03, .contents02_05{
+    margin-bottom: 6vh;
+}
+
+.contents02_03, .contents02_04, .contents02_05, .contents02_06{
+    flex-direction: column;
+}
+
+.inview_re{
+    display: none;
+}
+
+.text{
+    width: 100%;
+    padding: 1%;
+    color: #f7f7f7;
+}
+
+#sec02 h2{
+    text-align: center;
+    margin-bottom: 6vh;
+}
+
+.contents02_03{
+    background: url(img/business_photo01.png) no-repeat center top;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+}
+
+.contents02_04{
+    background: url(img/business_photo01.png) no-repeat center top;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+}
+
+.contents02_05{
+    background: url(img/business_photo01.png) no-repeat center top;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+}
+
+.contents02_06{
+    background: url(img/business_photo02.png) no-repeat center top;
+    background-size: cover;
+    border-radius: 25px;
+    position: relative;
+}
+
+.contents02_03::before, .contents02_04::before, .contents02_05::before, .contents02_06::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #444;
+    opacity: 0.4;
+    border-radius: 25px;
+    position: absolute;
+}
+
+.contents02_03 .text, .contents02_04 .text, .contents02_05 .text, .contents02_06 .text{
+    position:relative;
+    color: #f7f7f7;;
+}
+
+.facebook img{
+    width: 45px;
+    height: 45px;
+}
+
+.link{
+    color: #516B87;
+    text-shadow: 0.7px 0.7px 0 #f7f7f7, -0.7px -0.7px 0 #f7f7f7,
+                 -0.7px 0.7px 0 #f7f7f7, 0.7px -0.7px 0 #f7f7f7,
+                 0px 0.7px 0 #f7f7f7,  0-0.7px 0 #f7f7f7,
+                 -0.7px 0 0 #f7f7f7, 0.7px 0 0 #f7f7f7;
+}
+
+.contents02_03 h2::before, .contents02_04 h2::before, .contents02_05 h2::before, .contents02_06 h2::before{
+    display: none;
+}
+
+/* sec03
+--------------------------------- */
+
+.contents03_02, .contents03_03, .contents03_04, .contents03_05, .contents03_06, .contents03_07{
+    margin-bottom: 6vh;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 40%;
+    top: 2350px;
+}
+}
+
+
+
+/* レスポンシブ02
+--------------------------------- */
+@media screen and (max-width: 430px){
+
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+
+/* header
+--------------------------------- */
+
+.header_menu span{
+    color: #F47D18;
+}
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 100px;
+}
+
+.contents01_01 p{
+    font-size: 0.9rem;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 60%;
+}
+}

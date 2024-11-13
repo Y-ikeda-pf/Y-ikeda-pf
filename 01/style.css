@@ -1,0 +1,235 @@
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 700px;
+    background: url(img/sec1_photo.png) no-repeat center top;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+#sec01::before{
+    width: 100%;
+    height: 700px;
+    content: "";
+    background-color: #F2EDCA;
+    border-radius: 50%;
+    position: absolute;
+    right: 50%;
+    z-index: -10;
+}
+
+.contents01_01 h2{
+    font-weight: 600;
+    font-size: 3.4rem;
+    letter-spacing: 0.4rem;
+    line-height: 1.5;
+    color: #F47D18;
+    text-shadow: 2px 2px 0 #f7f7f7, -2px -2px 0 #f7f7f7,
+                 -2px 2px 0 #f7f7f7, 2px -2px 0 #f7f7f7,
+                 0px 2px 0 #f7f7f7,  0-2px 0 #f7f7f7,
+                 -2px 0 0 #f7f7f7, 2px 0 0 #f7f7f7;
+    top: 400px;
+    position: absolute;
+    margin-bottom: 0;
+}
+
+/* sec02
+--------------------------------- */
+
+#sec02{
+    flex-direction: column;
+}
+
+h1 strong{
+    font-weight: 500;
+    font-size: 3.4rem;
+}
+
+/* sec03
+--------------------------------- */
+
+#sec03{
+    flex-direction: column;
+}
+
+.contents03_01::before{
+    width: 100%;
+    height: 450px;
+    content: "";
+    background-color: #F47D18;
+    opacity: 0.7;
+    border-radius: 0 30px 30px 0;
+    position: absolute;
+    right: 47.5%;
+    z-index: -10;
+}
+
+.contents03_02{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider{
+    width: 48.25%;
+}
+
+.slider img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.text{
+    width: 44.75%;
+}
+
+.text p:first-child{
+    margin-bottom: 3vh;
+}
+
+.text p:last-child{
+    text-align: end;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    content: url(img/home_honeycomb.png);
+    top: 800px;
+    right: 2vw;
+    position: absolute;
+    z-index: -10;
+}
+
+
+
+/* レスポンシブ01
+--------------------------------- */
+@media screen and (max-width: 834px){
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 450px;
+}
+
+#sec01::before{
+    height: 450px;
+}
+
+#sec01 h2{
+    font-size: 2.7rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.3;
+    top: 205px;
+    left: 4vw;
+}
+
+/* sec02
+--------------------------------- */
+
+h1 strong{
+    font-size: 2.7rem;
+}
+
+/* sec03
+--------------------------------- */
+
+.contents03_01::before{
+    height: 350px;
+}
+
+.contents03_02{
+    justify-content: space-between;
+}
+
+.text{
+    width: 50.1%;
+}
+
+.text p:first-child{
+    margin-bottom: 0;
+}
+
+.text p:last-child{
+    color: #516B87;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 40%;
+    top: 500px;
+}
+}
+
+
+
+/* レスポンシブ02
+--------------------------------- */
+@media screen and (max-width: 430px){
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 350px;
+    background: url(img/sec1_photo.png) no-repeat right;
+    background-size: cover;
+}
+
+#sec01::before{
+    display: none;
+}
+
+#sec01 h2{
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.4;
+}
+
+/* sec02
+--------------------------------- */
+
+.contents02_01{
+    line-height: normal;
+}
+
+h1 strong{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+/* sec03
+--------------------------------- */
+
+.contents03_01::before{
+    display: none;
+}
+
+.contents03_02{
+    flex-direction: column;
+}
+
+.slider{
+    width: 100%;
+}
+
+.text{
+    width: 100%;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 60%;
+}
+}

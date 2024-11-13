@@ -1,0 +1,298 @@
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+header{
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 300px;
+    background: url(../common/img/head_photo.jpg) no-repeat center top;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.contents01_01{
+    color: #f7f7f7;
+    line-height: normal;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h1 span{
+    color: #F47D18;
+}
+
+.contents01_01 p{
+    font-family: "Montserrat:ital", sans-serif;
+    text-align: center;
+}
+
+/* sec02
+--------------------------------- */
+
+#sec02{
+    flex-direction: column;
+}
+
+.contents02_02{
+    width: 100%;
+    padding-left: 5vw;
+    margin-bottom: 10vh;
+}
+
+dl{
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+dt{
+    width: 33%;
+    padding-left: 5vw;
+    margin-bottom: 10vh;
+}
+  
+dd{
+    width: 67%;
+}
+
+::placeholder {
+    color: #516B87;
+    opacity: 0.5;
+}
+
+dt.required::before{
+    content: "必須";
+    background: #F47D18;
+    border-radius: 3px;
+    color: #f7f7f7;
+    font-size: 0.9rem;
+    padding: 2px;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+select{
+    width: 200px;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: #fff;
+    padding: 0.5vw;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+  
+.select::before {
+    width: 0;
+    height: 0;
+    border-width: 10px 8px 0 8px;
+    border-style: solid;
+    border-color: #516B87 transparent transparent transparent;
+    opacity: 0.5;
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 175px;
+} 
+
+input[type="text"], input[type="tel"], input[type="email"]{
+    width: 92%;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 0.5vw;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+textarea{
+    width: 92%;
+    height: 36vh;
+    border: 1px solid rgb(200, 200, 200);
+    padding: 0.5vw;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+input[type="radio"]{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid rgb(200, 200, 200);
+    vertical-align: -1.5px;
+}
+
+label[for="phone"], label[for="mail"], label[for="none"]{
+    margin-right: 2em;
+}
+
+input[type="radio"]:checked{
+    background: #516B87;
+    opacity: 0.5;
+}
+
+input[type=submit]{
+    width: 20%;
+    position: relative;
+    left: calc((100% - 20%) / 2);
+    padding: 10px;
+    border: 1px solid rgba(81, 107, 135, 0.5);
+    border-radius: 3px;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: rgba(81, 107, 135, 0.5);
+    cursor: pointer;
+}
+
+.warning{
+    color: #F47D18;
+    padding-left: 33%;
+}
+     
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    content: url(img/contact_honeycomb.png);
+    top: 450px;
+    left: 2vw;
+    position: absolute;
+    z-index: -10;
+}
+
+
+
+/* レスポンシブ01
+--------------------------------- */
+@media screen and (max-width: 834px){
+
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 150px;
+}
+
+/* sec02
+--------------------------------- */
+
+.contents02_02{
+    padding: 0;
+    margin-bottom: 6vh;
+    color: #516B87;
+}
+
+dt{
+    padding: 0;
+    margin-bottom: 6vh;
+}
+
+.select::before {
+    margin-top: 10px;
+    margin-left: 175px;
+} 
+
+input[type="text"], input[type="tel"], input[type="email"]{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    height: 30vh;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 49%;
+    top: 250px;
+}
+}
+
+
+
+/* レスポンシブ02
+--------------------------------- */
+@media screen and (max-width: 430px){
+
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+    
+/* header
+--------------------------------- */
+    
+.header_menu span{
+    color: #F47D18;
+}
+    
+/* sec01
+--------------------------------- */
+    
+#sec01{
+    height: 100px;
+}
+    
+.contents01_01 p{
+    font-size: 0.9rem;
+}
+    
+/* sec02
+--------------------------------- */
+
+dl{
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+  
+dt{
+    width: 100%;
+    margin: 0;
+}
+  
+dd{
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+select{
+    width: 162.5px;
+    font-size: 1rem;
+}
+  
+.select::before {
+    margin-top: 8px;
+    margin-left: 140px;
+} 
+
+input[type="text"], input[type="tel"], input[type="email"]{
+    font-size: 1rem;
+}
+
+textarea{
+    font-size: 1rem;
+}
+
+input[type=submit]{
+    padding: 5px;
+    font-size: 1rem;
+}
+
+.warning{
+    padding-left: 0;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 73%;
+}
+}

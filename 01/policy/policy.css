@@ -1,0 +1,89 @@
+
+body{
+    font-family: "Kosugi", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+    color: #444;
+    background-color: #f7f7f7;
+}
+
+section{
+    width: 100%;
+    padding: 0 6vw;
+}
+
+h1{
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 12vh;
+}
+
+h2{
+    border-left: 5px solid rgb(200, 200, 200);
+    padding-left: 1vw;
+    margin-bottom: 6vh;
+}
+
+p{
+    margin-bottom: 12vh;
+}
+
+.contents01_01 h1{
+    margin-top: 12vh;
+}
+
+.end{
+    text-align: end;
+    margin-bottom: 0;
+}
+
+
+
+/* レスポンシブ01
+--------------------------------- */
+@media screen and (max-width: 834px){
+
+body{
+    line-height: 1.8;
+}
+
+section{
+    padding: 0 4vw;
+}
+
+h1{
+    font-size: 1.8rem;
+    margin-bottom: 6vh;
+}
+
+h2{
+    margin-bottom: 3vh;
+}
+
+p{
+    margin-bottom: 6vh;
+}
+
+.contents01_01 h1{
+    margin-top: 6vh;
+}
+}
+
+
+
+/* レスポンシブ02
+--------------------------------- */
+@media screen and (max-width: 430px){
+
+body{
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+}

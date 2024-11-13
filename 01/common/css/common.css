@@ -1,0 +1,308 @@
+
+body{
+    font-family: "Kosugi", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+    color: #444;
+    background-color: #f7f7f7;
+}
+
+section{
+    width: 100%;
+    padding: 0 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 12vh;
+}
+
+a:hover{
+    color: #F47D18;
+}
+
+/* header
+--------------------------------- */
+
+header{
+    width: 100%;
+    padding: 0 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    z-index: 1000;
+}
+
+header ul{
+    display: flex;
+    font-size: 0.9rem;
+    gap: 2em;
+}
+
+/* footer
+--------------------------------- */
+
+footer{
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+footer .logo{
+    padding: 0 6vw;
+    margin-bottom: 3vh;
+}
+
+.company{
+    padding: 0 6vw;
+    margin-bottom: 6vh;
+}
+
+.footer_menu{
+    padding: 6vh 6vw 0 6vw;
+    border-top: 1px solid rgb(200, 200, 200);
+    margin-bottom: 6vh;
+}
+
+.footer_menu li:first-child{
+    margin-bottom: 3vh;
+}
+
+.copyright{
+    padding-right: 6vw;
+    font-family: "Montserrat:ital", sans-serif;
+    text-align: end;
+    background-color: #F47D18;
+    border-radius: 10px 0 0 10px;
+    margin-left: 6vw;
+}
+
+/* topボタン
+--------------------------------- */
+
+.top_btn{
+    right: 6vw;
+    bottom: 6vh;
+    position: fixed;
+    z-index: 1000;
+}
+
+/* sec04(お問い合わせ)
+--------------------------------- */
+
+#sec04{
+    background: url(../img/sec4_photo.jpg) no-repeat center top;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.contents04_01{
+    padding-top: 12vh;
+    color: #f7f7f7;
+    text-shadow: 3px 3px 5px #444;
+}
+
+.contents04_02{
+    font-family: "M PLUS 1", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    color: #f7f7f7;
+    text-shadow: 3px 3px 5px #444;
+    margin-bottom: 6vh;
+}
+
+.contents04_03{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12vh;
+}
+
+.contents04_03 a:hover{
+    color: #444;
+}
+
+button{
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    color: #444;
+    background-color: #f7f7f7;
+    font-family: "Montserrat:ital", sans-serif;
+    text-align: center;
+}
+
+.info_btn img{
+    width: 25px;
+    height: 34px;
+}
+
+button:first-child{
+    display: none;
+}
+
+
+
+/* レスポンシブ01
+--------------------------------- */
+@media screen and (max-width: 834px){
+
+body{
+    line-height: 1.8;
+}
+
+section{
+    padding: 0 4vw;
+    margin-bottom: 12vh;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 1.8rem;
+    margin-bottom: 6vh;
+}
+           
+/* header
+--------------------------------- */
+
+header{
+    padding: 0 4vw;
+}
+    
+/* footer
+--------------------------------- */
+
+footer .logo{
+    padding: 0 4vw;
+}
+
+.logo img{
+    width: 205px;
+    height: 50px;
+}
+
+.company{
+    padding: 0 4vw;
+}
+
+.footer_menu{
+    padding: 6vh 4vw 0 4vw;
+}
+
+.copyright{
+    padding-right: 4vw;
+    margin-left: 4vw;
+}
+
+/* topボタン
+--------------------------------- */
+
+.top_btn{
+    right: 4vw;
+    bottom: 4vw;
+}
+
+.top_btn img{
+    width: 45px;
+    height: 45px;
+}
+
+/* sec04(お問い合わせ)
+--------------------------------- */
+
+.contents04_01{
+    padding-top: 6vh;
+}
+
+.contents04_02{
+    font-size: 1.8rem;
+}
+
+.contents04_03{
+    margin-bottom: 6vh;
+}
+
+button:first-child{
+    display: block;
+}
+}
+    
+
+
+/* レスポンシブ02
+--------------------------------- */
+@media screen and (max-width: 430px){
+
+body{
+    font-size: 1rem;
+    letter-spacing: normal;
+}
+        
+h1, h2, h3, h4, h5, h6{
+    font-size: 1.2rem;
+}
+
+/* header
+--------------------------------- */
+
+header{
+    flex-direction: column;
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+.logo{
+    margin-bottom: 1vh;
+}
+header ul{
+    font-size: 0.88rem;
+    gap: 1.5em;
+    margin-bottom: 1vh;
+}
+
+/* footer
+--------------------------------- */
+
+.copyright{
+    font-size: 0.79rem;
+}
+
+/* topボタン
+--------------------------------- */
+
+.top_btn{
+    bottom: 6vw;
+}
+
+/* sec04(お問い合わせ)
+--------------------------------- */
+
+.contents04_02{
+    font-size: 1rem;
+}
+
+.contents04_03{
+    font-size: 0.9rem;
+}
+
+button{
+    width: 70px;
+    height: 35px;
+}
+
+.info_btn img{
+    width: 15px;
+    height: 20.4px;
+    margin-bottom: 3px;
+}
+}

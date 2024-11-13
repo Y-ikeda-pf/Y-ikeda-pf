@@ -1,0 +1,211 @@
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+header{
+    background-color: #f7f7f7;
+    position: relative;
+}
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 300px;
+    background: url(../common/img/head_photo.jpg) no-repeat center top;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.contents01_01{
+    color: #f7f7f7;
+    line-height: normal;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h1 span{
+    color: #F47D18;
+}
+
+.contents01_01 p{
+    font-family: "Montserrat:ital", sans-serif;
+    text-align: center;
+}
+
+/* page共通CSS
+--------------------------------- */
+
+section{
+    margin-bottom: 20vh;
+}
+
+dt{
+    float: left;
+    padding: 5vh 0 5vh 5vw;
+}
+
+dd{
+	padding: 5vh 0 5vh 30vw;
+}
+
+/* sec03
+--------------------------------- */
+
+#sec03{
+    flex-direction: column;
+}
+
+.contents03_01::before{
+    width: 68%;
+    height: 35px;
+    content: "";
+    background-color: #F47D18;
+    opacity: 0.8;
+    border-radius: 20px 0 0 20px;
+    position: absolute;
+    left: 32%;
+    z-index: -10;
+}
+
+.contents03_02::before{
+    width: 71%;
+    height: 20px;
+    content: "";
+    background-color: #F2EDCA;
+    border-radius: 0 10px 10px 0 ;
+    position: absolute;
+    right: 29%;
+    z-index: -10;
+}
+
+.contents03_02{
+    margin-bottom: 5vh;
+}
+
+.contents03_03::after{
+    width: 45%;
+    height: 25px;
+    content: "";
+    background-color: #516B87;
+    opacity: 0.6;
+    border-radius: 0 15px 15px 0 ;
+    position: absolute;
+    right: 55%;
+    z-index: -10;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    content: url(img/company_honeycomb.png);
+    top: 450px;
+    right: 2vw;
+    position: absolute;
+    z-index: -10;
+}
+
+
+
+/* レスポンシブ01
+--------------------------------- */
+@media screen and (max-width: 834px){
+
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+
+/* sec01
+--------------------------------- */
+
+#sec01{
+    height: 150px;
+}
+
+/* page共通CSS
+--------------------------------- */
+
+section{
+    margin-bottom: 10vh;
+}
+
+dt{
+    padding: 3vh 0;
+}
+
+dd{
+	padding: 3vh 0 3vh 20vw;
+}
+
+/* sec02
+--------------------------------- */
+
+.contents02_01 a{
+    color: #516B87;
+}
+
+/* sec03
+--------------------------------- */
+
+.contents03_02{
+    margin-bottom: 3vh;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 40%;
+    top: 250px;
+}
+}
+
+
+
+/* レスポンシブ02
+--------------------------------- */
+@media screen and (max-width: 430px){
+
+/* 下層page共通CSS(sec1まで)
+--------------------------------- */
+        
+/* header
+--------------------------------- */
+        
+.header_menu span{
+    color: #F47D18;
+}
+        
+/* sec01
+--------------------------------- */
+        
+#sec01{
+    height: 100px;
+}
+        
+.contents01_01 p{
+    font-size: 0.9rem;
+}
+
+/* page共通CSS
+--------------------------------- */
+
+dd{
+	padding-left: 23.5vw;
+}
+
+/* sec03
+--------------------------------- */
+
+.contents03_01::before, .contents03_02::before, .contents03_03::after{
+    display: none;
+}
+
+/* honeycomb
+--------------------------------- */
+
+.honeycomb{
+    width: 60%;
+}
+}
